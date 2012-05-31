@@ -5,10 +5,9 @@
 <p>
 <%= @length%> characters
 </p>
-<form action="?length=<%=@length%>" method="post">
+<%= form_tag("?length=#{@length}", :method => "post") do -%>
   <textarea name="content"><%=@content%></textarea>
   <div>
     <input type="submit" value="send" />
   </div>
-</form>
-
+<% end -%>
