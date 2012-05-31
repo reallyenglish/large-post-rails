@@ -1,0 +1,14 @@
+<p>
+<%= @message %>
+<p>
+
+<p>
+<%= @length%> charactors
+</p>
+<form action="?length=<%=@length%>" method="post">
+  <textarea name="content"><%=@content%></textarea>
+  <div>
+    <input type="submit" value="send" />
+  </div>
+</form>
+
